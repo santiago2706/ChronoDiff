@@ -1,1 +1,21 @@
-node_modules/\ndist/\nout/\ntarget/\n.env\n.DS_Store
+# Dependencias
+node_modules/
+
+# Archivos compilados (generados por esbuild/tsc)
+dist/
+out/
+
+# Logs y debug
+*.log
+npm-debug.log*
+
+# VS Code Extension testing
+.vscode-test/
+*.vsix
+
+# Tests (Vitest)
+coverage/
+
+# Sistema Operativo (opcional pero recomendado)
+.DS_Store
+Thumbs.db

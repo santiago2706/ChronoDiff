@@ -1,0 +1,36 @@
+{
+  "name": "predictive-impact",
+  "displayName": "Predictive Impact",
+  "description": "Understand the impact of your code changes before they become problems.",
+  "version": "0.0.1",
+  "publisher": "predictive-impact",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "predictiveImpact.analyzeImpact",
+        "title": "Predictive Impact: Analyze Impact"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "node apps/extension/build.mjs",
+    "watch": "node apps/extension/build.mjs --watch",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "eslint": "^9.0.0",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  }
+}
